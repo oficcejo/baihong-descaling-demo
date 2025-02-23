@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佰宏除垢灵工作原理 - 在线演示</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        canvas {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>佰宏除垢灵工作原理演示</h1>
+        <canvas id="animationCanvas" width="1000" height="400"></canvas>
+        <div class="controls">
+            <button onclick="restartAnimation()">重新开始</button>
+        </div>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #00ffff"></div>
+                <span>除垢灵分子</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #cd853f"></div>
+                <span>外层水垢</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #b8860b"></div>
+                <span>中层水垢</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #8b4513"></div>
+                <span>内层水垢</span>
+            </div>
+        </div>
+    </div>
+    <script src="demo.js"></script>
+</body>
+</html> 
